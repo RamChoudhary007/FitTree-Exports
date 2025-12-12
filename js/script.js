@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 const title = product.querySelector('.card-title').textContent.toLowerCase();
                 const description = product.querySelector('.card-text').textContent.toLowerCase();
 
-                if (title.includes(searchTerm) || description.includes(searchTerm)) {
+                if (title.includes(searchTerm)) {
                     product.style.display = 'block';
                 } else {
                     product.style.display = 'none';
